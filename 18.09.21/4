@@ -1,0 +1,25 @@
+#define _USE_MATH_DEFINES
+
+#include <iostream>
+#include <fstream>
+#include <iomanip>
+#include <utility>
+#include <cmath>
+#include <vector>
+#include <algorithm>
+#include <stack>
+
+
+using namespace std;
+
+const int INF = 2e9;
+const int mod = 1e9 + 7;
+
+
+signed main()
+{
+    int v, t;
+    cin >> v >> t;
+    cout << (((v * t) % 109) + 109) % 109;
+
+}
