@@ -1,31 +1,15 @@
-#define _USE_MATH_DEFINES
-
 #include <iostream>
-#include <fstream>
-#include <iomanip>
-#include <utility>
-#include <cmath>
-#include <vector>
-#include <algorithm>
-#include <stack>
 
-
-using namespace std;
-
-const int INF = 2e9;
-const int mod = 1e9 + 7;
-
-
-signed main()
+int main()
 {
-    int t;
-    cin >> t;
-    int sum = 0;
-    while (t)
-    {
-        sum += t%10;
-        t/=10;
-    }
-    cout << sum;
+    int a = 0;
+    int b = 0;
+    std::cin >> a >> b;
+    a = a + b;
+    b = a - 2 * b;
+    b = (a + b) / 2;
+    a -= b;
+    std::cout << a << " " << b << std::endl;
 
+    return EXIT_SUCCESS;
 }
