@@ -1,24 +1,11 @@
-#define _USE_MATH_DEFINES
-
 #include <iostream>
-#include <fstream>
-#include <iomanip>
-#include <utility>
-#include <cmath>
-#include <vector>
-#include <algorithm>
-#include <stack>
 
-
-using namespace std;
-
-const int INF = 2e9;
-const int mod = 1e9 + 7;
-
-
-signed main()
+int main()
 {
     int f, s;
-    cin >> f >> s;
-    cout << (f + s + abs(f - s)) / 2;
+    std::cin >> f >> s;
+    bool sign = signbit((long double)(f - s));
+    int tmp = -1 * (int)sign;
+    std::cout << (f + s + tmp * (f - s)) / 2;
+    return EXIT_SUCCESS;
 }
