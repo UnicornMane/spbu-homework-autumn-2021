@@ -13,4 +13,5 @@ int main()
 
     std::cout << sum2 - sum1;
 
+    return EXIT_SUCCESS;
 }
