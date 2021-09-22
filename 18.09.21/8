@@ -1,37 +1,16 @@
-#define _USE_MATH_DEFINES
-
 #include <iostream>
-#include <fstream>
-#include <iomanip>
-#include <utility>
-#include <cmath>
-#include <vector>
-#include <algorithm>
-#include <stack>
 
-
-using namespace std;
-
-const int INF = 2e9;
-const int mod = 1e9 + 7;
-
-struct Time
+int main()
 {
-    int sum;
 
-    void in()
-    {
-        int h, m, s;
-        cin >> h >> m >> s;
-        sum = 3600 * h + 60 * m + s;
-    }
-};
+    int h, m, s;
 
-signed main()
-{
-    Time tb, tn;
-    tb.in();
-    tn.in();
+    std::cin >> h >> m >> s;
+    int sum1 = 3600 * h + 60 * m + s;
 
-    cout << tn.sum - tb.sum;
+    std::cin >> h >> m >> s;
+    int sum2 = 3600 * h + 60 * m + s;
+
+    std::cout << sum2 - sum1;
+
 }
