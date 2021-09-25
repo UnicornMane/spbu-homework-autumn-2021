@@ -1,7 +1,5 @@
 #include <iostream>
-#include <map>
 #include <vector>
-#include <string>
 #include <clocale>
 
 using namespace std;
