@@ -11,4 +11,5 @@ int main()
     cout << "The next number for the number " <<  t <<  " is " << t + 1 << ".\n";
     cout << "The previous number for the number " <<  t <<  " is " << t - 1 << ".\n";
 
+    return EXIT_SUCCESS;
 }
