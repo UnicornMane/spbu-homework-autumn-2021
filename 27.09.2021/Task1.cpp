@@ -130,28 +130,36 @@ int main()
 				flag = true;
 				break;
 			case 2:
-				cout << "два";
+				cout << "два банана";
+				flag = true;
 				break;
 			case 3:
-				cout << "три";
+				cout << "три банана";
+				flag = true;
 				break;
 			case 4:
-				cout << "четыре";
+				cout << "четыре банана";
+				flag = true;
 				break;
 			case 5:
-				cout << "пять";
+				cout << "пять бананов";
+				flag = true;
 				break;
 			case 6:
-				cout << "шесть";
+				cout << "шесть бананов";
+				flag = true;
 				break;
 			case 7:
-				cout << "семь";
+				cout << "семь бананов";
+				flag = true;
 				break;
 			case 8:
-				cout << "восемь";
+				cout << "восемь бананов";
+				flag = true;
 				break;
 			case 9:
-				cout << "девять";
+				cout << "девять бананов";
+				flag = true;
 				break;
 			default:
 				break;
