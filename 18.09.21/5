@@ -5,7 +5,10 @@ int main()
     int a = 0;
     int sum = 0;
     std::cin >> a;
+    
     sum = (a % 10) + ((a % 100) / 10) + (a / 100);
+    
     std::cout << sum;
+    
     return EXIT_SUCCESS;
 }
