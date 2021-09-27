@@ -8,5 +8,6 @@ int main()
     long long x2 = x * x;
 
     std::cout << (x2 + 1) * (x2 + x) + 1;
+    
     return EXIT_SUCCESS;
 }
