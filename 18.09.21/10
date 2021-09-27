@@ -2,10 +2,11 @@
 
 int main()
 {
-    int f, s;
+    int f = 0;
+    int s = 0;
     std::cin >> f >> s;
-    bool sign = signbit((long double)(f - s));
-    int tmp = -1 * (int)sign;
-    std::cout << (f + s + tmp * (f - s)) / 2;
+
+    std::cout << ((f / s * f + s / f * s) / (f / s + s / f));
+
     return EXIT_SUCCESS;
 }
