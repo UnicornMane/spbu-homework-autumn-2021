@@ -2,20 +2,20 @@
 
 using namespace std;
 
-void my_swap(int& a, int& b)
+template<typename any>
+void my_swap(any& a, any& b)
 {
 	a ^= b;
 	b ^= a;
 	a ^= b;
 }
 
-int main()
+int main(int argc, char* argv[])
 {
 	int a = 0;
 	int b = 0;
 	cin >> a >> b;
-
 	my_swap(a, b);
-
-	cout << a << endl << b;
+	cout << a << " " << b;
+	return EXIT_SUCCESS;
 }
