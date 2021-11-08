@@ -9,6 +9,7 @@ int main(int argc, char* argv[])
 
 	long long value = *((long long*)&f);
 
+	//если мы не проверим вручную первый бит, отвечающий за знак, то на первом шаге цикла "long long bitMask = 1ll << currentBit;" переполнится
 	if (f < 0)
 	{
 		cout << 1;
@@ -17,7 +18,7 @@ int main(int argc, char* argv[])
 	{
 		cout << 0;
 	}
-
+	//
 
 	for (int i = 1; i < sizeof(int) * 8; ++i)
 	{
