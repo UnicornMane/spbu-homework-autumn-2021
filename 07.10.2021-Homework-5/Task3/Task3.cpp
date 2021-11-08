@@ -14,7 +14,7 @@ int main(int argc, char* argv[])
 		return EXIT_FAILURE;
 	}
 
-	if (signbit(k))
+	if (k < 0)
 	{
 		k = ~k;
 		bool flag = false;
