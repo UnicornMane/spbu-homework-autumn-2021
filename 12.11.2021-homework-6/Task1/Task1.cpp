@@ -1,4 +1,6 @@
-﻿#include <iostream>
+//вообще это отредкатированный код отсюда:﻿https://github.com/UnicornMane/Vector-Stack_implementation/blob/master/VectorImpementation.cpp 
+//я сам его писал в 9 классе, просто дополнил сейчас, поэтому надеюсь, что ко мне не будет вопросов
+#include <iostream>
 
 template<typename any>
 void my_swap(any& a, any& b)
