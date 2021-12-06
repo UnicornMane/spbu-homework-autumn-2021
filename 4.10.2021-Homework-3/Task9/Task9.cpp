@@ -10,11 +10,11 @@ int main(int argc, char* argv[])
     long long d = 0;
     cin >> a >> b >> c >> d;
 
-    for (; a <= b; a++)
+    for (int i = a; i <= b; ++i)
     {
-        if ((a % d) == c)
+        if ((i % d) == c)
         {
-            cout << a << " ";
+            cout << i << " ";
         }
     }
 
