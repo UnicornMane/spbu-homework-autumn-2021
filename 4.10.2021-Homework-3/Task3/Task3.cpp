@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 
     int cnt = 1;
     int str = 1;
-    
+
     while (cnt <= n)
     {
         int tstr = str;

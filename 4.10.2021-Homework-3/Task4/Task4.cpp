@@ -9,7 +9,16 @@ int main(int argc, char* argv[])
 	int k = 0;
 	cin >> n >> k;
 
-	vector <vector <int>> f(n + 1, vector <int>(n + 1, 1));
+	int** f = new int* [n + 1];
+
+	for (int i = 0; i <= n; i++)
+	{
+		f[i] = new int[n + 1];
+		for (int j = 0; j <= n; j++)
+		{
+			f[i][j] = 1;
+		}
+	}
 
 	for (int i = 0; i <= n; i++)
 	{
@@ -20,5 +29,12 @@ int main(int argc, char* argv[])
 	}
 
 	cout << f[n][k];
+
+	for (int i = 0; i <= n; ++i)
+	{
+		delete[] f[i];
+	}
+	delete[] f;
+
 	return EXIT_SUCCESS;
 }

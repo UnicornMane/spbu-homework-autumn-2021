@@ -11,12 +11,15 @@ int main(int argc, char* argv[])
     cin >> a >> b >> c;
     if (c < a)
     {
-        swap(c, a); //реализация свопа лежит в репозитории, сделанная через шаблоны: 
-                    //https://github.com/UnicornMane/spbu-homework-autumn-2021/blob/main/swap_implementation/swap_implementation/swap_implementation.cpp
+        a ^= c;
+        c ^= a;
+        a ^= c;
     }
     if (c < b)
     {
-        swap(c, b);
+        c ^= b;
+        b ^= c;
+        c ^= b;
     }
 
     if (a + b <= c)

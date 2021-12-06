@@ -1,6 +1,4 @@
 ﻿#include <iostream>
-#include <stack>
-
 
 using namespace std;
 
@@ -9,7 +7,9 @@ int main(int argc, char* argv[])
     int x = 0;
     cin >> x;
 
-    stack<int> st;
+    int* st = new int[x];
+
+    int cnt = 0;
 
     for (int i = 1; i * i <= x; i++)
     {
@@ -20,14 +20,16 @@ int main(int argc, char* argv[])
         else if ((x % i) == 0)
         {
             cout << i << " ";
-            st.push(x / i);
+            st[cnt++] = x / i;
         }
     }
 
-    while(!st.empty())
+    while (cnt)
     {
-        cout << st.top() << " ";
-        st.pop();
+        cout << st[--cnt] << " ";
     }
+
+    delete[] st;
+
     return EXIT_SUCCESS;
 }

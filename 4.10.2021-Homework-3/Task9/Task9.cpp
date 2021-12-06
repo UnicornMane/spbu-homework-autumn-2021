@@ -17,5 +17,6 @@ int main(int argc, char* argv[])
             cout << a << " ";
         }
     }
+
     return EXIT_SUCCESS;
 }

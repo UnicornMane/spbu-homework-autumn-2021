@@ -8,7 +8,7 @@ int main(int argc, char* argv[])
     cin >> n;
 
     int sum = 0;
-   
+
     while (n--)
     {
         int t = 0;
@@ -18,5 +18,6 @@ int main(int argc, char* argv[])
     }
 
     cout << sum;
+
     return EXIT_SUCCESS;
 }
