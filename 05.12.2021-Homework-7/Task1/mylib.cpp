@@ -25,13 +25,13 @@ void task3(int r)
 	{
 		for (int j = 0; j <= 2 * r; ++j)
 		{
-			if (r * r >= (i - r) * (i - r) + (j - r) * (j - r))
+			if (1 >= abs((i - r) * (i - r) + (j - r) * (j - r) - r * r))
 			{
-				std::cout << '*';
+				std::cout << "*";
 			}
 			else
 			{
-				std::cout << ' ';
+				std::cout << " ";
 			}
 		}
 		std::cout << std::endl;
