@@ -103,13 +103,23 @@ Fraction Fraction::abs()
 	return Fraction(std::abs(this->numerator), std::abs(this->denominator));
 }
 
+long long binpow (long long a, long long n) {
+	int res = 1;
+	while (n) 
+	{
+		if (n & 1)
+		{
+			res *= a;
+		}
+		a *= a;
+		n >>= 1;
+	}
+	return res;
+}
+
 Fraction Fraction::pow(long long n)
 {
-	Fraction tmp = (*this);
-	for (int i = 0; i < n - 1; ++i)
-	{
-		tmp = tmp * (*this);
-	}
+	Fraction tmp(binpow(this->numerator, n), binpow(this->denominator, n));
 	return tmp;
 }
 
