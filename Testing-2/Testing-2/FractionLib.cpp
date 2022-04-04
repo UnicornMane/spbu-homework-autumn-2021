@@ -106,7 +106,7 @@ Fraction Fraction::abs()
 Fraction Fraction::pow(long long n)
 {
 	Fraction tmp = (*this);
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < n - 1; ++i)
 	{
 		tmp = tmp * (*this);
 	}
