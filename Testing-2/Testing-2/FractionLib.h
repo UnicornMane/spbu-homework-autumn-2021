@@ -32,23 +32,40 @@ public:
 
 
 	friend bool operator==(const Fraction& l, const Fraction& r);
+	friend bool operator==(long long l, const Fraction& r);
+	friend bool operator==(const Fraction& l, long long r);
 
 	friend bool operator>(const Fraction& l, const Fraction& r);
+	friend bool operator>(const long long l, const Fraction& r);
+	friend bool operator>(const Fraction& l, const long long r);
+
 	friend bool operator<(const Fraction& l, const Fraction& r);
+	friend bool operator<(const long long l, const Fraction& r);
+	friend bool operator<(const Fraction& l, const long long r);
 
 	friend bool operator>=(const Fraction& l, const Fraction& r);
+	friend bool operator>=(const long long l, const Fraction& r);
+	friend bool operator>=(const Fraction& l, const long long r);
+
 	friend bool operator<=(const Fraction& l, const Fraction& r);
+	friend bool operator<=(const long long l, const Fraction& r);
+	friend bool operator<=(const Fraction& l, const long long r);
 
 	friend Fraction operator+(const Fraction& l, const Fraction& r);
+	friend Fraction operator+(const long long l, const Fraction& r);
+	friend Fraction operator+(const Fraction& l, const long long r);
+
 	friend Fraction operator-(const Fraction& l, const Fraction& r);
+	friend Fraction operator-(const long long l, const Fraction& r);
+	friend Fraction operator-(const Fraction& l, const long long r);
 
 	friend Fraction operator*(const Fraction& l, const Fraction& r);
-	friend Fraction operator*(const Fraction& l, long long r);
-	friend Fraction operator*(long long l, const Fraction& r);
+	friend Fraction operator*(const Fraction& l, const long long r);
+	friend Fraction operator*(const long long l, const Fraction& r);
 
 	friend Fraction operator/(const Fraction& l, const Fraction& r);
-	friend Fraction operator/(long long l, const Fraction& r);
-	friend Fraction operator/(const Fraction& l, long long r);
+	friend Fraction operator/(const long long l, const Fraction& r);
+	friend Fraction operator/(const Fraction& l, const long long r);
 
 	friend std::ostream& operator<<(std::ostream& stream, const Fraction& fraction);
 
