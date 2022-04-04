@@ -60,10 +60,11 @@ void Complex::sqrt(int n, std::ostream& stream)
 {
 	double phi = Complex::arg();
 	double r = Complex::abs();
-	for (int i = 0; i < n; ++i)
-	{
-		std::cout << Complex(std::pow(r, 1 / (double)n) * cos((phi + 2 * M_PI * i) / n), std::pow(r, 1 / (double)n) * sin((phi + 2 * M_PI * i) / n)) << std::endl;
-	}
+	std::cout << r << " * (cos((" << phi << " + 2 * pi * k) / " << n << ") + i * sin((" << phi << " + 2 * pi * k) / " << n << "))";
+	//for (int i = 0; i < n; ++i)
+	//{
+	//	std::cout << Complex(std::pow(r, 1 / (double)n) * cos((phi + 2 * M_PI * i) / n), std::pow(r, 1 / (double)n) * sin((phi + 2 * M_PI * i) / n)) << std::endl;
+	//}
 }
 
 Complex operator*(Complex complex1, Complex complex2)
