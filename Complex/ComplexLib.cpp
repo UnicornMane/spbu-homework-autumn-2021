@@ -67,6 +67,8 @@ void Complex::sqrt(int n, std::ostream& stream)
 	//}
 }
 
+
+
 Complex operator*(Complex complex1, Complex complex2)
 {
 	return Complex(complex1.re * complex2.re - complex1.im * complex2.im, complex1.re * complex2.im + complex1.im * complex2.re);
