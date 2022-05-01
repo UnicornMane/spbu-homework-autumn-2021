@@ -97,9 +97,11 @@ int LinkedList::extract(int index)
 		temp = temp->next;
 	}
 	Node* k = temp->next;
+	int toReturn = k->data;
 	temp->next = k->next;
 	k->~Node();
 	--count;
+	return toReturn;
 }
 
 void LinkedList::swap(int index1, int index2)

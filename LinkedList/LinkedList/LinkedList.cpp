@@ -23,7 +23,7 @@ int main(int argc, char* argv[])
 	cout << list << endl;
 	list.insert(3, 2);
 	cout << list << endl;
-	list.extract(2);
+	cout << list.extract(2) << endl;
 	cout << list << endl;
 	list.insert(3, 2);
 	list.insert(4, 2);
